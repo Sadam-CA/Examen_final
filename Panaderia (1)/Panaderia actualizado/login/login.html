@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión o Registrarse</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body class="fondo-confirmacion">
+
+  <section id="mensaje-confirmacion">
+    <h2>Bienvenido a Panadería Delicia 🥐</h2>
+
+    <div class="formulario">
+      <div id="form-login">
+        <h3>Iniciar Sesión</h3>
+        <input type="email" id="login-correo" placeholder="Correo electrónico" required />
+        <input type="password" id="login-contraseña" placeholder="Contraseña" required />
+        <button onclick="iniciarSesion()">Iniciar Sesión</button>
+      </div>
+
+      <hr style="margin: 20px 0;">
+
+      <div id="form-registro">
+        <h3>Registrarse</h3>
+        <input type="text" id="registro-nombre" placeholder="Nombre y Apellido" required />
+        <input type="email" id="registro-correo" placeholder="Correo electrónico" required />
+        <input type="password" id="registro-contraseña" placeholder="Contraseña" required />
+        <input type="tel" id="registro-telefono" placeholder="Teléfono de contacto" required />
+        <input type="text" id="registro-direccion" placeholder="Dirección (opcional)" />
+        <button onclick="registrarse()">Registrarse</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="login.js"></script>
+</body>
+</html>

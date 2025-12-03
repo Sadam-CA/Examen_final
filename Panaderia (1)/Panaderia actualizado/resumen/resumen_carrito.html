@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso de Checkout</title>
+    <link rel="stylesheet" href="resumen_carrito.css">
+</head>
+<body>
+
+<div class="fondo-confirmacion">
+    <div id="mensaje-confirmacion">
+        <h2>Resumen de tu Pedido</h2>
+        <table id="tabla-carrito">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se llenarán los productos -->
+            </tbody>
+        </table>
+
+        <p id="impuestos">Impuestos: S/0.00</p>
+        <p id="envio">Costo de envío: S/5.00</p>
+
+        <h3 id="total-carrito">Total: S/0.00</h3>
+
+        <label for="metodo-entrega">Selecciona el método de entrega:</label>
+        <select id="metodo-entrega">
+            <option value="delivery" selected>Delivery</option>
+            <option value="recoger">Recoger en tienda</option>
+        </select>
+
+        <div id="direccion-container">
+            <label for="direccion">Dirección de entrega:</label>
+            <input type="text" id="direccion" placeholder="Escribe tu dirección aquí">
+        </div>
+
+        <div id="sucursal-container" style="display: none;">
+            <label for="sucursal">Selecciona la sucursal:</label>
+            <select id="sucursal">
+                <option value="sede1">Sede Giraldes</option>
+                <option value="sede2">Sede Real Plaza</option>
+                <option value="sede3">Sede Open Plaza</option>
+            </select>
+        </div>
+
+        <label for="metodo-pago">Selecciona el método de pago:</label>
+        <select id="metodo-pago">
+            <option value="">-- Selecciona --</option>
+            <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+            <option value="yape">Yape/Plin</option>
+            <option value="contra-entrega">Pago contra entrega</option>
+        </select>
+
+        <button id="boton-confirmar" onclick="finalizarCompra()">✨ Finalizar Compra ✨</button>
+    </div>
+</div>
+
+<script src="resumen_carrito.js"></script>
+</body>
+</html>

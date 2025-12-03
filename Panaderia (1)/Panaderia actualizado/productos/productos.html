@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo - Panadería Delicia</title>
+  <link rel="stylesheet" href="productos.css" />
+</head>
+<body>
+
+  <h2>Catálogo de Productos</h2>
+
+  <div class="botones-categorias">
+    <button onclick="filtrarCategoria('todos')" class="boton-categoria">Todos</button>
+    <button onclick="filtrarCategoria('panaderia')" class="boton-categoria">Panadería</button>
+    <button onclick="filtrarCategoria('pasteleria')" class="boton-categoria">Pastelería</button>
+    <button onclick="filtrarCategoria('reposteria')" class="boton-categoria">Repostería</button>
+    <button onclick="filtrarCategoria('bocaditos')" class="boton-categoria">Bocaditos salados</button>
+  </div>
+
+  <div class="productos-container">
+    <div class="producto panaderia">
+      <img src="../img/img (2).jpg" alt="Pan francés" />
+      <h3>Pan francés</h3>
+      <p>S/2.00</p>
+    </div>
+
+    <div class="producto bocaditos">
+      <img src="../img/img3.jpg" alt="Empanadas de pollo" />
+      <h3>Empanadas de pollo</h3>
+      <p>S/5.00</p>
+    </div>
+
+    <div class="producto reposteria">
+      <img src="../img/img4.jpg" alt="Bizcochos de vainilla" />
+      <h3>Bizcochos de vainilla</h3>
+      <p>S/3.50</p>
+    </div>
+
+    <div class="producto pasteleria">
+      <img src="../img/img5.jpg" alt="Pastel de chocolate" />
+      <h3>Pastel de chocolate</h3>
+      <p>S/6.00</p>
+    </div>
+
+    <div class="producto pasteleria">
+      <img src="../img/img6.jpg" alt="Pay de manzana" />
+      <h3>Pay de manzana</h3>
+      <p>S/4.50</p>
+    </div>
+
+    <div class="producto reposteria">
+      <img src="../img/que.jpeg" alt="Queque de zanahoria" />
+      <h3>Queque de zanahoria</h3>
+      <p>S/5.00</p>
+    </div>
+  </div>
+
+  <br><br>
+  <a href="../principal/principal.html" class="boton-inicio">🏠 Volver al inicio</a>
+
+  <!-- 🔘 Botón flotante al carrito -->
+  <a href="../carrito/carrito.html" class="boton-carrito">🛒 Ver Carrito</a>
+
+  <script>
+    function filtrarCategoria(categoria) {
+      const productos = document.querySelectorAll('.producto');
+      productos.forEach(producto => {
+        if (categoria === 'todos') {
+          producto.style.display = 'block';
+        } else {
+          producto.classList.contains(categoria)
+            ? producto.style.display = 'block'
+            : producto.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
