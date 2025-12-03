@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f1e9;
+}
+
+header.encabezado-principal {
+  background-image: url('img/img7.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px;
+  color: white;
+}
+
+header h1 {
+  font-size: 60px;
+  font-family: 'Old Standard TT', serif;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+header p {
+  font-size: 40px;
+  font-family: 'Old Standard TT', serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  background-color: #8B4513;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #FFD700;
+  text-decoration: underline;
+}
+
+#mapa-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+#mapa {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.area-interactiva {
+  position: absolute;
+  border: 2px solid transparent;
+  background-color: rgba(255, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.area-interactiva:hover {
+  background-color: rgba(255, 0, 0, 0.4);
+  border: 2px solid red;
+}
+
+.zona-panaderia {
+  top: 55%;
+  left: 60%;
+  width: 20%;
+  height: 20%;
+}
+
+footer {
+  background-color: #8B4513;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
+
+body {
+  background-image: url('img/img7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.fondo-confirmacion {
+  background-color: transparent;
+  color: #8B4513;
+}
+
+#mensaje-confirmacion {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  animation: fadeIn 1s ease-out, slideUp 1s ease-out;
+}
+
+h2, h3, p, select, input, table {
+  color: #8B4513;
+}
+
+#tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#tabla-carrito th, #tabla-carrito td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #8B4513;
+}
+
+#tabla-carrito th {
+  background-color: #8B4513;
+  color: white;
+}
+
+select, input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #8B4513;
+  width: 100%;
+  background-color: #f8f1e9;
+}
+
+.boton-finalizar {
+  background-color: #8B4513;
+  color: white;
+  padding: 14px 25px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boton-finalizar:hover {
+  background-color: #7e5940;
+  transform: scale(1.05);
+}
+
+#direccion-container, #sucursal-container {
+  margin-top: 20px;
+  display: none;
+}
+
+button {
+  background-color: #8B4513;
+  color: white;
+  padding: 14px 28px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  background-color: #7e5940;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); }
+  to { transform: translateY(0); }
+}
