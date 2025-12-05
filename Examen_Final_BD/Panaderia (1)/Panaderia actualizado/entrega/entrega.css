@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
+
+body {
+  background-image: url('img/img7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  background-color: #f8f1e9;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.fondo-confirmacion {
+  background-color: transparent;
+  color: #8B4513;
+}
+
+#mensaje-confirmacion {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  animation: fadeIn 1s ease-out, slideUp 1s ease-out;
+}
+
+#mensaje-confirmacion h2 {
+  font-family: 'Old Standard TT', serif;
+  font-size: 36px;
+  color: #8B4513;
+  margin-bottom: 20px;
+}
+
+#mensaje-confirmacion p {
+  font-size: 20px;
+  color: #8B4513;
+  margin-bottom: 20px;
+}
+
+#mensaje-confirmacion a {
+  background-color: #8B4513;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#mensaje-confirmacion a:hover {
+  background-color: #7e5940;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
