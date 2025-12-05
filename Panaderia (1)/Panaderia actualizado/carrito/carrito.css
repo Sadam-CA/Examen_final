@@ -128,6 +128,26 @@ h2 {
   width: 80%;
 }
 
+/* Estilo para el botón Finalizar Compra */
+.boton-finalizar {
+  background-color: #8B4513;
+  color: white;
+  padding: 10px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.boton-finalizar:hover {
+  background-color: #fff;
+  color: #D4A373;
+  border: 2px solid #D4A373;
+}
+
 .boton-inicio {
   background-color: #A0522D;
   color: white;

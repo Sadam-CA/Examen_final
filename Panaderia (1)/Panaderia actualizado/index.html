@@ -33,6 +33,21 @@
   <footer class="pie">
     &copy; 2025 Panadería Delicia – Todos los derechos reservados
   </footer>
+<script type="module">
+  import { supabase } from "./supabaseClient.js";
 
+  async function probarConexion() {
+    const { data, error } = await supabase.from("test").select("*");
+
+    if (error) {
+      console.error("❌ Error:", error);
+    } else {
+      console.log("✅ Conexión exitosa");
+      console.log("Datos:", data);
+    }
+  }
+
+  probarConexion();
+</script>
 </body>
 </html>

@@ -9,43 +9,44 @@
 <body>
 
   <h2>Nuestros Productos</h2>
+ 
 
   <div class="productos-container">
     <div class="producto">
       <img src="../img/img (2).jpg" alt="Pan francés" />
       <h3>Pan francés</h3>
       <p>S/2.00</p>
-      <button onclick="agregarAlCarrito('Pan francés', 2.00)">Agregar</button>
+      <button onclick="agregarAlCarritoById(1, 1)">Agregar</button>
     </div>
     <div class="producto">
       <img src="../img/img3.jpg" alt="Empanadas de pollo" />
       <h3>Empanadas de pollo</h3>
       <p>S/5.00</p>
-      <button onclick="agregarAlCarrito('Empanadas de pollo', 5.00)">Agregar</button>
+      <button onclick="agregarAlCarritoById(2, 1)">Agregar</button>
     </div>
     <div class="producto">
       <img src="../img/img4.jpg" alt="Bizcochos de vainilla" />
       <h3>Bizcochos de vainilla</h3>
       <p>S/3.50</p>
-      <button onclick="agregarAlCarrito('Bizcochos de vainilla', 3.50)">Agregar</button>
+      <button onclick="agregarAlCarritoById(3, 1)">Agregar</button>
     </div>
     <div class="producto">
       <img src="../img/img5.jpg" alt="Pastel de chocolate" />
       <h3>Pastel de chocolate</h3>
       <p>S/6.00</p>
-      <button onclick="agregarAlCarrito('Pastel de chocolate', 6.00)">Agregar</button>
+      <button onclick="agregarAlCarritoById(4, 1)">Agregar</button>
     </div>
     <div class="producto">
       <img src="../img/img6.jpg" alt="Pay de manzana" />
       <h3>Pay de manzana</h3>
       <p>S/4.50</p>
-      <button onclick="agregarAlCarrito('Pay de manzana', 4.50)">Agregar</button>
+      <button onclick="agregarAlCarritoById(5, 1)">Agregar</button>
     </div>
     <div class="producto">
       <img src="../img/que.jpeg" alt="Queque de zanahoria" />
       <h3>Queque de zanahoria</h3>
       <p>S/5.00</p>
-      <button onclick="agregarAlCarrito('Queque de zanahoria', 5.00)">Agregar</button>
+      <button onclick="agregarAlCarritoById(6, 1)">Agregar</button>
     </div>
   </div>
 
@@ -57,7 +58,7 @@
     <button id="vaciar-carrito">Vaciar Carrito</button>
 
     <br><br>
-    <button onclick="finalizarCompra()">Finalizar Compra</button>
+    <button class="boton-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
 
     <br><br>
     <a href="../principal/principal.html" class="boton-inicio">🏠 Volver al inicio</a>
